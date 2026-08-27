@@ -2,7 +2,15 @@
 
 Built 2026-08-22 from a live session that produced the first write-up. Evaluated against `../../best practices for building agents.md`.
 
-Implementation: [`Product/.claude/skills/open-issues/SKILL.md`](../../../../.claude/skills/open-issues/SKILL.md), invoked as `/open-issues`. That is the only copy — deliberately not mirrored into this folder, because two copies of the same instructions drift the moment one is edited.
+Implementation: [`Product/.claude/skills/open-issues/SKILL.md`](../../../../.claude/skills/open-issues/SKILL.md), invoked as `/open-issues`. That path is **canonical** — it is what Claude Code actually loads.
+
+The `SKILL.md` beside this file is a **read-only mirror**, kept so the agent folder is self-contained on GitHub. Edit the canonical file, never this one, then re-sync:
+
+```sh
+cp .claude/skills/open-issues/SKILL.md "projects/building agents/agents/open issues agent/SKILL.md"
+```
+
+Check they still match with `diff` on those two paths — a difference means someone edited the mirror, and the mirror always loses.
 
 ## Why a skill and not a subagent
 
