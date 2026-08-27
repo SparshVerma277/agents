@@ -1,0 +1,1 @@
+../../../../.claude/skills/open-issues/SKILL.md
