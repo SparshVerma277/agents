@@ -1,6 +1,14 @@
 # Status — superseded 2026-08-24
 
-**Shipped as a skill, not a subagent: `Product/.claude/skills/rca/SKILL.md`, invoked as `/rca`.**
+**Shipped as a skill, not a subagent: [`Product/.claude/skills/rca/SKILL.md`](../../../../.claude/skills/rca/SKILL.md), invoked as `/rca`.** That path is **canonical** — it is what Claude Code actually loads.
+
+The `SKILL.md` beside this file is a **read-only mirror**, kept so the agent folder is self-contained on GitHub. Edit the canonical file, never this one, then re-sync:
+
+```sh
+cp .claude/skills/rca/SKILL.md "projects/building agents/agents/rca agent/SKILL.md"
+```
+
+Check they still match with `diff` on those two paths — a difference means someone edited the mirror, and the mirror always loses.
 
 This file is design history. Where it conflicts with the skill, the skill wins. The frontmatter below is retained as a record of the original subagent framing and should not be loaded.
 
