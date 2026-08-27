@@ -101,6 +101,7 @@ The transcription is the cheap half. On every issue, actively look for these and
 - Order `At a glance`, `Decisions needed` and `Status` by **date needed, soonest first**. Undated urgent items go at the top. The ordering carries the severity signal — do not number the issues, because numbering churns on every reorder.
 - `Closed since` has no date to order by. List those items in checklist order.
 - Notion tables are real table blocks. Markdown bold renders literally inside cells, so leave `**` out of table cells. To edit a table later, fetch the page first and match the `<table>` block as stored.
+- **Every dated page carries the same sections, with the same headings, in the same order** — `At a glance`, date-coverage note, `Closed since`, `Decisions needed`, `Status`, `Appendix`. Only `Closed since` and the date-coverage note may be omitted, and only when there is nothing to report. Do not rename a section, add one, or reorder them: these pages are read as a series, and a reader comparing two dates should be comparing content, not structure. `At a glance` is mandatory on every page.
 
 ## Output template
 
@@ -119,7 +120,7 @@ Use this structure exactly.
  Omit the whole section if nothing closed since the last page.]
 
 ## Decisions needed
-[One bullet per open decision: what must be decided, by whom, by when.]
+[One-line bullets. What has to be decided — nothing else.]
 
 ## Status
 ### <date needed> — <issue title>
@@ -139,6 +140,14 @@ Use this structure exactly.
 [Only what is NOT in the Status section: root cause mechanics, how the defect escaped,
  third-party positions, prior deferral history. Never restate the summary.]
 ```
+
+Rules for the Decisions needed section:
+
+- **One line per decision. No sub-bullets, no rationale, no consequence clause.** If a decision needs explaining, the explanation belongs in that issue's Status or appendix entry.
+- **Name the owner as a neutral trailing tag, never as the subject of the sentence.** `Retail MDR — release slot for PMT-8354. owner: Manish` not `Manish still hasn't prioritised PMT-8354`. The tag is a routing label so the reader knows who to ask; the decision is the story, not the person. Use `owner: unassigned` when no one holds it.
+- **Do not name a cause for the delay** — capacity, bandwidth, competing priorities, another team's silence. Even when true, it converts a status list into an argument about someone. The absence of a date is the fact; the reason is not this document's business.
+- **No recommendations and no urgency language here.** This page's job is to surface open items and the facts about them. "Needs immediate attention" and "should have been done by now" are both editorial.
+- The same restraint applies to the capacity note: **report the date concentration, not whose capacity is short.** "Five of nine items carry no date; three sit on 8 Sep" is the finding.
 
 Rules for the Closed section:
 
@@ -160,6 +169,8 @@ Rules for the split:
 - **The appendix holds only what is not above.** No duplication — that is what makes two copies drift.
 - **An issue with no extra detail gets no appendix entry.** Do not pad it for symmetry.
 - Keep bullets to one sentence where possible. Bold the claim, not the sentence.
+- **Bold every person's name, everywhere it appears in the write-up** — `**Saket**`, `**Nishant**`, `**Vishal**`. In `Owner and action`, in `Decisions needed` owner tags, in `Closed since`, in the appendix. A reader scanning for their own name should find it without reading the prose. This applies to people only, not to organisations (FNBO, Conduent, EXL, EY) — bolding those too would leave nothing unbolded.
+- **Exception: never bold inside a table cell.** Notion renders `**` literally there, so the `Owner` column in `At a glance` stays plain text. This is the one place a name appears unbolded.
 
 ## Reference
 
@@ -177,6 +188,7 @@ Internal stakeholders. Own the problems rather than describing them from outside
 
 - `IM-` — production issues and bugs.
 - `PMT-` — product tickets raised and awaiting a release slot.
+- `OT-` — operation tickets: a change to production *data* rather than to code, carried out by a script. Raised when a defect has already written bad records and those records need correcting. An `OT-` is the usual companion to an `IM-` whose fix only covers new activity.
 
 ### People seen on this work
 
@@ -184,7 +196,11 @@ Owners: Saket, Sheel, Ankit, Mayank, Nishant. EXL liaison: Vishal. VISA refund g
 
 External parties: **FNBO** (client), **Conduent** (servicing platform), **EY** (penetration testing), **360 Finance** (integration programme gated by pen-test remediation), **EXL** (partner, owns the Conduent track).
 
-Lender configurations appear as `TIC`, `HIL`, `config 11`. Products include `UCL`.
+### Client and product structure
+
+- **FNBO** is the bank — the client.
+- FNBO has two products: **HIL** and **UCL**. An issue is almost always scoped to one of them, and "fixed" for one does not mean fixed for the other. Say which product a fix covers and which is still waiting.
+- **`TIC`** and **`config 11`** are lender configurations, not products. A config-level hotfix leaves the other configurations exposed — name the remaining scope rather than reporting the item as fixed.
 
 Confirm names against the current page rather than assuming this list is complete.
 
