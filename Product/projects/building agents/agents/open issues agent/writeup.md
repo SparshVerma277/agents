@@ -2,7 +2,7 @@
 
 Built 2026-08-22 from a live session that produced the first write-up. Evaluated against `../../best practices for building agents.md`.
 
-Implementation: `Product/.claude/skills/open-issues/SKILL.md`, invoked as `/open-issues`. The `SKILL.md` beside this file is a symlink to it, not a copy — edit either path, there is only one file.
+Implementation: [`Product/.claude/skills/open-issues/SKILL.md`](../../../../.claude/skills/open-issues/SKILL.md), invoked as `/open-issues`. That is the only copy — deliberately not mirrored into this folder, because two copies of the same instructions drift the moment one is edited.
 
 ## Why a skill and not a subagent
 
