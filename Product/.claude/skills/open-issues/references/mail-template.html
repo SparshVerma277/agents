@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  Mail version template for /open-issues.
+  Design is fixed and ported from the ClarityPay release-notes mail. Change CONTENT ONLY.
+
+  Placeholders to substitute:
+    __LOGO_FNBO_B64__   base64 of references/logo-fnbo.png
+    __LOGO_SLICE_B64__  base64 of references/logo-slice.png
+    __DATE__            e.g. 27 Aug'2026
+    __N_OPEN__ __N_NODATE__ __N_CLOSED__ __PREV_DATE__
+    __INTRO__ __DECISIONS__ __GROUPS__ __STAMP__ __PAGE_DATE__
+
+  Build with:
+    python3 -c "
+    import base64
+    t=open('references/mail-template.html').read()
+    for k,f in [('__LOGO_FNBO_B64__','references/logo-fnbo.png'),('__LOGO_SLICE_B64__','references/logo-slice.png')]:
+        t=t.replace(k, base64.b64encode(open(f,'rb').read()).decode())
+    ... substitute remaining placeholders ...
+    open(out,'w').write(t)"
+
+  Card colours by group:
+    CLOSED THIS PERIOD  accent rgb(22,128,80)   card rgb(246,252,248)  chip rgb(230,246,237)
+    NEEDS A DATE        accent rgb(200,66,45)   card rgb(255,249,247)  chip rgb(253,235,231)
+    CLOSEST RELEASE     accent rgb(7,95,220)    card rgb(248,251,255)  chip rgb(232,240,253)
+    LATER               accent rgb(120,124,134) card rgb(250,250,251)  chip rgb(238,239,241)
+    DECISIONS NEEDED    accent rgb(191,138,12)  card rgb(255,251,240)  chip rgb(250,240,214)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Open Issues Update | __DATE__</title>
+<style type="text/css">P {margin-top:0;margin-bottom:0;}  body {margin:0; padding:24px 0; background-color:rgb(241,245,249);}</style>
+</head>
+<body dir="ltr">
+
+<table role="presentation" cellspacing="0" cellpadding="0" style="text-align: left; border-width: 1px; border-style: solid; border-color: rgb(194, 221, 240); background-color: rgb(255, 255, 255); margin: 0px auto; width: 680px; max-width: 680px; color: rgb(36, 36, 36); box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+
+<!-- LOGOS — both, always, heights matched at 34px -->
+<tr>
+<td align="center" style="padding: 22px 20px 18px;">
+<table role="presentation" cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin: 0px auto;">
+<tr>
+<td style="padding: 0px 16px 0px 0px; vertical-align: middle;"><img alt="FNBO" height="34" style="height: 34px; width: auto; display: block;" src="data:image/png;base64,__LOGO_FNBO_B64__"></td>
+<td style="padding: 0px; vertical-align: middle; border-left: 1px solid rgb(214, 226, 238);">&nbsp;</td>
+<td style="padding: 0px 0px 0px 16px; vertical-align: middle;"><img alt="slice by fnbo" height="34" style="height: 34px; width: auto; display: block;" src="data:image/png;base64,__LOGO_SLICE_B64__"></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- BANNER -->
+<tr>
+<td style="text-align: left;">
+<h1 style="text-align: center; line-height: 34px; background-color: rgb(250, 245, 240); margin: 0px; padding: 30px 20px; font-family: Inter, Arial, sans-serif; font-size: 28px; font-weight: 600; color: rgb(37, 63, 112);">
+<b>Open Issues Update</b><br>
+__DATE__ | Internal Status</h1>
+</td>
+</tr>
+
+<!-- STAT STRIP — three tiles -->
+<tr>
+<td style="text-align: left; padding: 0px;">
+<table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse; background-color: rgb(252, 253, 255); border-bottom: 1px solid rgb(232, 237, 243);">
+<tr>
+<td align="center" style="padding: 14px 8px; width: 33.33%; border-right: 1px solid rgb(238, 242, 247);">
+<div style="font-family: Inter, Arial, sans-serif; font-size: 22px; font-weight: 600; color: rgb(37, 63, 112); line-height: 26px;">__N_OPEN__</div>
+<div style="font-family: Inter, Arial, sans-serif; font-size: 10px; letter-spacing: 0.6px; color: rgb(120, 124, 134); font-weight: 600;">OPEN</div>
+</td>
+<td align="center" style="padding: 14px 8px; width: 33.33%; border-right: 1px solid rgb(238, 242, 247);">
+<div style="font-family: Inter, Arial, sans-serif; font-size: 22px; font-weight: 600; color: rgb(200, 66, 45); line-height: 26px;">__N_NODATE__</div>
+<div style="font-family: Inter, Arial, sans-serif; font-size: 10px; letter-spacing: 0.6px; color: rgb(120, 124, 134); font-weight: 600;">NO DATE</div>
+</td>
+<td align="center" style="padding: 14px 8px; width: 33.33%;">
+<div style="font-family: Inter, Arial, sans-serif; font-size: 22px; font-weight: 600; color: rgb(22, 128, 80); line-height: 26px;">__N_CLOSED__</div>
+<div style="font-family: Inter, Arial, sans-serif; font-size: 10px; letter-spacing: 0.6px; color: rgb(120, 124, 134); font-weight: 600;">CLOSED SINCE __PREV_DATE__</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- INTRO -->
+<tr>
+<td style="text-align: left; padding: 24px 24px 16px;">
+<h3 style="text-align: left; line-height: 24px; margin: 0px 0px 12px; font-size: 16px; font-weight: 600;">
+<span style="font-family: Inter, Arial, sans-serif; color: rgb(36, 36, 36); font-weight: normal;">Hi team,</span></h3>
+<p style="text-align: left; line-height: 22px; margin: 10px 0px 0px; font-family: Inter, Arial, sans-serif; font-size: 14px;">
+<span style="color: rgb(36, 36, 36);">__INTRO__</span></p>
+</td>
+</tr>
+
+<!-- DECISIONS NEEDED — one-line rows, owner as trailing tag -->
+<tr>
+<td style="text-align: left; padding: 4px 24px 20px;">
+<div style="background-color: rgb(255, 251, 240); padding: 14px 16px; border-left: 3px solid rgb(191, 138, 12); border-radius: 0px 6px 6px 0px;">
+<div style="background-color: rgb(250, 240, 214); margin: 0px 0px 10px; padding: 2px 8px; border-radius: 4px; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: 11px; color: rgb(151, 108, 6);">
+<span style="letter-spacing: 0.4px; font-weight: 600;">DECISIONS NEEDED &middot; __N_DECISIONS__</span></div>
+<table role="presentation" cellspacing="0" cellpadding="0" style="border-collapse: collapse; font-family: Inter, Arial, sans-serif; font-size: 13px; line-height: 19px; color: rgb(57, 61, 71);">
+<!-- one <tr> per decision; last row padding: 0px -->
+<tr><td style="padding: 0px 0px 6px;">__DECISION__ &nbsp;<span style="color: rgb(120, 124, 134);">owner:</span> <b>__OWNER__</b></td></tr>
+</table>
+</div>
+</td>
+</tr>
+
+<tr><td style="text-align: left;"><hr style="text-align: left; margin: 0px; border: 0px; border-top: 1px solid rgb(232, 237, 243);"></td></tr>
+
+<!-- ===== GROUP — repeat this pair of rows per group, in fixed order ===== -->
+<tr>
+<td style="text-align: left; padding: 20px 24px 4px;">
+<div style="font-family: Inter, Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.8px; color: __ACCENT__;">__GROUP_LABEL__ &nbsp;&middot;&nbsp; __GROUP_N__</div>
+<div style="font-family: Inter, Arial, sans-serif; font-size: 12px; color: rgb(120, 124, 134); margin: 4px 0px 0px;">__GROUP_SUBTITLE__</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 12px 24px 8px;">
+
+<!-- CARD — repeat per issue. Last card in a group uses margin: 0px -->
+<div style="background-color: __CARD_BG__; margin: 0px 0px 14px; padding: 14px 16px; border-left: 3px solid __ACCENT__; border-radius: 0px 6px 6px 0px;">
+<div style="background-color: __CHIP_BG__; margin: 0px 0px 6px; padding: 2px 8px; border-radius: 4px; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: 11px; color: __ACCENT__;">
+<span style="letter-spacing: 0.4px; font-weight: 600;">__TYPE__ &middot; __SCOPE__</span></div>
+<div style="margin: 0px 0px 8px; font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63, 112);">
+<span style="font-weight: 600;">__TITLE__</span> &nbsp;<code style="font-size: 12px; color: rgb(120, 124, 134);">__TICKET__</code></div>
+<ul style="margin: 0px; padding: 0px 0px 0px 18px; font-family: Inter, Arial, sans-serif; font-size: 13px; line-height: 20px; color: rgb(57, 61, 71);">
+<li style="margin: 0px 0px 4px;"><b>Issue</b> &mdash; __ISSUE__</li>
+<li style="margin: 0px 0px 4px;"><b>Post release</b> &mdash; __POST_RELEASE__</li>
+<li style="margin: 0px;"><b>Owner</b> &mdash; <b>__OWNER__</b> &middot; __ACTION__</li>
+</ul>
+</div>
+<!-- CLOSED THIS PERIOD cards carry a single <p> instead of the <ul>: one line on what closed it -->
+
+</td>
+</tr>
+<tr><td style="text-align: left;"><hr style="text-align: left; margin: 0px; border: 0px; border-top: 1px solid rgb(232, 237, 243);"></td></tr>
+<!-- ===== end group ===== -->
+
+<!-- FOOTER -->
+<tr>
+<td style="text-align: left; padding: 20px 24px 24px;">
+<p style="text-align: left; line-height: 20px; margin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rgb(57, 61, 71);">
+Full detail, including root-cause mechanics and prior deferral history, sits on the <b>Open issues</b> Notion page under the dated subpage for __PAGE_DATE__.</p>
+<p style="text-align: left; line-height: 20px; margin: 14px 0px 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rgb(57, 61, 71);">
+Regards,<br>
+<b>Sparsh Verma</b></p>
+<p style="text-align: left; line-height: 16px; margin: 18px 0px 0px; font-family: Inter, Arial, sans-serif; font-size: 11px; color: rgb(150, 158, 170);">Generated from the __PAGE_DATE__ Notion page on __STAMP__. If the page has changed since, regenerate before sending.</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</body>
+</html>

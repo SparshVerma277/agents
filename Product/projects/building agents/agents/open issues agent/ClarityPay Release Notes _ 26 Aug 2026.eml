@@ -1,0 +1,579 @@
+Received: from MA0PR01MB9635.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:bf::14)
+ by MAUPR01MB12475.INDPRD01.PROD.OUTLOOK.COM with HTTPS; Wed, 26 Aug 2026
+ 10:01:12 +0000
+Received: from MAUPR01MB13618.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:225::17) by MA0PR01MB9635.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:bf::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.360.8; Wed, 26 Aug
+ 2026 10:01:11 +0000
+Received: from MAUPR01MB13618.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::109a:2d44:ce0b:a102]) by MAUPR01MB13618.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::109a:2d44:ce0b:a102%4]) with mapi id 15.21.0360.006; Wed, 26 Aug 2026
+ 10:01:11 +0000
+From: Aarzoo Garg <aarzoo.garg@skeps.com>
+To: Evren Erbis <evren@claritypay.com>, Sameer Kumar
+	<sameer.kumar@claritypay.com>, saurabh <saurabh@claritypay.com>, "Nishank
+ Nihar" <nishank.nihar@claritypay.com>, "nancy@claritypay.com"
+	<nancy@claritypay.com>, "priyamvada.kamra@claritypay.com"
+	<priyamvada.kamra@claritypay.com>, "chiara.casoni@claritypay.com"
+	<chiara.casoni@claritypay.com>
+CC: Mohit Sharma <mohit.sharma@skeps.com>, Deepankar Gulati
+	<deepankar@skeps.com>, Siddhant Marwah <siddhant.marwah@skeps.com>
+Subject: ClarityPay Release Notes | 26 Aug 2026
+Thread-Topic: ClarityPay Release Notes | 26 Aug 2026
+Thread-Index: AQHdNSjYSzWr0ywaUEavOrbSA4p53A==
+Date: Wed, 26 Aug 2026 10:01:11 +0000
+Message-ID: <MAUPR01MB13618F1081A21EE17EA11E031FEAE2@MAUPR01MB13618.INDPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-IN, en-US
+Content-Language: en-IN
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: MAUPR01MB13618.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id: 26edbea2-c3ac-4270-7651-08df0358f518
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_Enabled=True;MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_SiteId=4bb4e0ba-6acb-4ba7-a284-22a5f465b4ca;MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_SetDate=2026-08-26T10:01:11.074Z;MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_Name=General;MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_ContentBits=1;MSIP_Label_803385b5-5e17-4111-b6ca-dc0dcfed9433_Method=Standard;
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info: cnDbFZShG9l4CnVfL6rJcBvq/PdNY/L/OngAD4pyHHaW9zb0AoJ1PxrXft4+fJFeK/gyKMeGt1DPGvPFr/NL18ynmkL9uYY7T+OkYNfiG2ptoB8la2yiECcV+XMXwDW+J2APyWvikDZG6IE9yjgJ0yL4dj3Yykj7599IJYI/Dr4fF+Q3pndzUj8BmuB+ZTxxDeiovlGutfUPai2837wn+HaGtWRIBeB3a8/Gcknor0D334WfwoFPKsoTT2jdSG4t1plOVemhm49wFWI3fC5msxfp9Zch/y3ALujLFTCJFCs6tIF3MNFbzGb1MlxJ2inqaBVNSbZYxwYbtvHIG5qxe/eaaLifyyP1N+nSvEDJBu6v5YxcGTTNLCjPliTdM8LkP4u3lcJeVNhmWtwN+iIkRvwy+Q+23hKUt8bg1gXVVBLGnGjGoJhsPJKb3vw2gJU4aih72ReO4nyqMp+gzGfG5daXVWuSrsaiYWQ4Alip6fuaRIg9NMSmpGMy67brvTTwb+2J8CfqBC6KUYAJnXoTDmU5ros/3YCFRQiZw304m11ffYTW0G/zcRQ2kG7ugq0cy5SqPITEsEnUNYGX7eOPZlMxo0Ll9OSkKSOPed3J0Z9vo8fPSmljhKmKT25tLwbT94X51z18C93oY5kQSBTCnO4C+PcK6obJD88mgwAu0yLOwmd/7R3iZ1rr2wZS4XbvVHhbe+XleYLs5dQOHY+iuL9E+3t42dE70WWGC1tDfxtLCxa/zKrhvNHD+ADmXhBPP4F+LXvHMNs+ItY20qUnsosWMIRzPHrf9L4aFik/LteGbxorFjwLn0Dq+9eLNBeS
+Content-Type: multipart/related;
+	boundary="_004_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_004_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_
+Content-Type: multipart/alternative;
+	boundary="_000_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_"
+
+--_000_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+[ClarityPay]<https://ind01.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Furl.usb.m.mimecastprotect.com%2Fs%2FRHahCN7rlkuOj5gimf2OhyNEL1%3Fdoma=
+in%3Dclaritypay.com%2F&data=3D05%7C02%7Csiddhant.marwah%40skeps.com%7C26edb=
+ea2c3ac4270765108df0358f518%7C4bb4e0ba6acb4ba7a28422a5f465b4ca%7C0%7C0%7C63=
+9233352732116101%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLj=
+AuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sda=
+ta=3DZk24zpYx4qjhoLmR6r6fsq%2FD%2BEItpQNBaGY1sL8rjK8%3D&reserved=3D0>
+Production Release Update
+26 Aug'2026 | Enhancement Release
+Hi team,
+
+We have rolled out a new production release for ClarityPay. Here's a summar=
+y of what's included:
+
+________________________________
+ENHANCEMENT
+CP: Add logo in customer journey for Epic Travelers (JBCA5STT)
+
+Adds the ClarityPay logo to the customer journey for the Epic Travelers mer=
+chant, with the correct collapsed and enlarged logo branding across the flo=
+w.
+
+ENHANCEMENT
+CP: Create a new merchant Epic Travelers in PreProd and Prod
+
+Sets up the new Epic Travelers merchant in the pre-production and productio=
+n environments, configured with ClarityPay branding.
+
+ENHANCEMENT
+CP - Merchant Portal Revamp
+
+Delivers a centralized Merchant Portal giving merchants control across the =
+application lifecycle, including sending prequal and loan-doc links, select=
+ing offers, requesting funding and refunds, uploading documents, and managi=
+ng users. Includes merchant branding, store selection at loan-doc time, and=
+ Talent LMS integration.
+
+ENHANCEMENT
+CP: Multiple purchase price support in pricing file and Conduent
+
+Supports multiple buyer purchase prices using a CODE:VALUE;CODE:VALUE forma=
+t in the pricing file, with the same string passed through to Conduent. Not=
+e: New Conduent Key configuration is planned for next release.
+
+ENHANCEMENT
+CP: Preferred Offer concept for Checkout
+
+Introduces the preferred-offer concept for Checkout merchants such as Whop =
+and Fanbasis, and for Lead/Invoice API merchants. The application is declin=
+ed if the preferred offer cannot be generated; if found, the preferred offe=
+rs are attached to the application.
+
+ENHANCEMENT
+CP: Pass communication name in email and SMS
+
+Adds a new communication_name variable to email and SMS so individual merch=
+ants show the merchant name and aggregator applications show the provider n=
+ame, while merchant and provider names continue to be passed separately.
+
+ENHANCEMENT
+Lender Dashboard calculation fixes
+
+Moves Lender Dashboard calculations for DTI, offers, program fee, monthly p=
+ayment, and post-funding metrics from the frontend to the backend for consi=
+stent, accurate results.
+
+________________________________
+
+If you have any questions about this release, please reach out to your acco=
+unt manager or contact us at aarzoo.garg@skeps.com<mailto:support@skeps.com=
+>.
+
+
+Regards,
+Aarzoo Garg
+
+
+--_000_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<table id=3D"table_0" role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"text-align: left; border-width: 1px; border-style: solid; b=
+order-color: rgb(194, 221, 240); background-color: rgb(255, 255, 255); marg=
+in: 0px auto; width: 680px; max-width: 680px; color: rgb(36, 36, 36); box-s=
+izing: border-box; border-collapse: collapse; border-spacing: 0px;" class=
+=3D"elementToProof">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"padding: 20px;"><span style=3D"font-family: I=
+nter, Arial, sans-serif; font-size: 15px; color: rgb(36, 36, 36); line-heig=
+ht: 15px;"><a href=3D"https://ind01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Furl.usb.m.mimecastprotect.com%2Fs%2FRHahCN7rlkuOj5gimf2Ohy=
+NEL1%3Fdomain%3Dclaritypay.com%2F&amp;data=3D05%7C02%7Csiddhant.marwah%40sk=
+eps.com%7C26edbea2c3ac4270765108df0358f518%7C4bb4e0ba6acb4ba7a28422a5f465b4=
+ca%7C0%7C0%7C639233352732116101%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnR=
+ydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7=
+C0%7C%7C%7C&amp;sdata=3DZk24zpYx4qjhoLmR6r6fsq%2FD%2BEItpQNBaGY1sL8rjK8%3D&=
+amp;reserved=3D0" originalsrc=3D"https://url.usb.m.mimecastprotect.com/s/RH=
+ahCN7rlkuOj5gimf2OhyNEL1?domain=3Dclaritypay.com/" id=3D"OWAd9536fc7-4b0b-a=
+7d2-88ef-00036f818f0b" class=3D"OWAAutoLink" title=3D"Original URL: https:/=
+/url.usb.m.mimecastprotect.com/s/RHahCN7rlkuOj5gimf2OhyNEL1?domain=3Dclarit=
+ypay.com/. Click or tap if you trust this link." originalsrc=3D"https://url=
+.usb.m.mimecastprotect.com/s/RHahCN7rlkuOj5gimf2OhyNEL1?domain=3Dclaritypay=
+.com/" data-auth=3D"NotApplicable" data-outlook-id=3D"1ce44574-a8c5-457b-85=
+0c-3a17cf79be6d" data-linkindex=3D"0" style=3D"margin: 0px;"><img alt=3D"Cl=
+arityPay" data-olk-copy-source=3D"MessageBody" data-placeholderid=3D"9f6c34=
+1f-089f-4b6c-9a31-5f0f60ce6f51" width=3D"146" style=3D"width: 146px; height=
+: auto; max-width: 100%; margin: 0px; display: block;" data-outlook-trace=
+=3D"F:1|T:1" src=3D"cid:b1452969-94cc-4c0b-b91b-a92858159cce"></a></span></=
+td>
+</tr>
+<tr>
+<td style=3D"text-align: left;">
+<h1 class=3D"skipProofing" style=3D"text-align: center; line-height: 34px; =
+background-color: rgb(250, 245, 240); margin: 0px; padding: 30px 20px; font=
+-family: Inter, Arial, sans-serif; font-size: 28px; font-weight: 600; color=
+: rgb(37, 63, 112);">
+<b>Production Release Update</b><br>
+26 Aug'2026 | Enhancement Release</h1>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left; padding: 24px 24px 16px;">
+<h3 class=3D"skipProofing" style=3D"text-align: left; line-height: 24px; ma=
+rgin: 0px 0px 12px; font-size: 16px; font-weight: 600;">
+<span style=3D"font-family: Inter, Arial, sans-serif; color: rgb(36, 36, 36=
+); font-weight: normal;">Hi team,</span></h3>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 22px; mar=
+gin: 10px 0px 0px; font-family: Inter, Arial, sans-serif; font-size: 14px;"=
+>
+<span style=3D"color: rgb(36, 36, 36);">We have rolled out a new production=
+ release for ClarityPay. Here's a summary of what's included:</span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;">
+<hr style=3D"text-align: left; margin: 0px; border-top: 1px solid rgb(232, =
+237, 243);">
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left; padding: 20px 24px;">
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP: Add logo in customer journey for Epic=
+ Travelers (JBCA5STT)</span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Adds the ClarityPay logo to the customer journey for the Epic Travelers mer=
+chant, with the correct collapsed and enlarged logo branding across the flo=
+w.</p>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP: Create a new merchant Epic Travelers =
+in PreProd and Prod</span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Sets up the new Epic Travelers merchant in the pre-production and productio=
+n environments, configured with ClarityPay branding.</p>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP - Merchant Portal Revamp</span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Delivers a centralized Merchant Portal giving merchants control across the =
+application lifecycle, including sending prequal and loan-doc links, select=
+ing offers, requesting funding and refunds, uploading documents, and managi=
+ng users. Includes merchant branding,
+ store selection at loan-doc time, and Talent LMS integration.</p>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP: Multiple purchase price support in pr=
+icing file and Conduent</span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Supports multiple buyer purchase prices using a CODE:VALUE;CODE:VALUE forma=
+t in the pricing file, with the same string passed through to Conduent. Not=
+e: New Conduent Key configuration is planned for next release.</p>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP: Preferred Offer concept for Checkout<=
+/span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Introduces the preferred-offer concept for Checkout merchants such as Whop =
+and Fanbasis, and for Lead/Invoice API merchants. The application is declin=
+ed if the preferred offer cannot be generated; if found, the preferred offe=
+rs are attached to the application.</p>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">CP: Pass communication name in email and =
+SMS</span></div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Adds a new communication_name variable to email and SMS so individual merch=
+ants show the merchant name and aggregator applications show the provider n=
+ame, while merchant and provider names continue to be passed separately.</p=
+>
+</div>
+<div class=3D"skipProofing" style=3D"background-color: rgb(248, 251, 255); =
+margin: 0px 0px 16px; padding: 14px 16px; border-left: 3px solid rgb(7, 95,=
+ 220); border-radius: 0px 6px 6px 0px;">
+<div class=3D"skipProofing" style=3D"text-align: left; background-color: rg=
+b(232, 240, 253); margin: 0px 0px 8px; padding: 2px 8px; border-radius: 4px=
+; display: inline-block; font-family: Inter, Arial, sans-serif; font-size: =
+11px; color: rgb(7, 95, 220);">
+<span style=3D"letter-spacing: 0.4px; font-weight: 600;">ENHANCEMENT</span>=
+</div>
+<div class=3D"skipProofing" style=3D"text-align: left; margin: 0px 0px 6px;=
+ font-family: Inter, Arial, sans-serif; font-size: 14px; color: rgb(37, 63,=
+ 112);">
+<span style=3D"font-weight: 600;">Lender Dashboard calculation fixes</span>=
+</div>
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 20px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 13px; color: rg=
+b(57, 61, 71);">
+Moves Lender Dashboard calculations for DTI, offers, program fee, monthly p=
+ayment, and post-funding metrics from the frontend to the backend for consi=
+stent, accurate results.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;">
+<hr style=3D"text-align: left; margin: 0px; border-top: 1px solid rgb(232, =
+237, 243);">
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left; padding: 20px 24px 24px;">
+<p class=3D"skipProofing" style=3D"text-align: left; line-height: 22px; mar=
+gin: 0px; font-family: Inter, Arial, sans-serif; font-size: 14px;">
+<span style=3D"color: rgb(36, 36, 36);">If you have any questions about thi=
+s release, please reach out to your account manager or contact us at
+</span><span style=3D"color: rgb(7, 95, 220);">aarzoo.garg<a href=3D"mailto=
+:support@skeps.com" id=3D"OWA38f5050d-8410-81a5-405c-7afcc8d1313e" class=3D=
+"OWAAutoLink" title=3D"mailto:support@skeps.com" data-outlook-id=3D"64861b0=
+0-591c-4167-a703-154bd2659972" data-linkindex=3D"1" style=3D"color: rgb(7, =
+95, 220); text-decoration: none; margin: 0px;">@skeps.com</a></span><span s=
+tyle=3D"color: rgb(36, 36, 36);">.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<span style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService,=
+ Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" cla=
+ss=3D"elementToProof"><br>
+</span>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Regards,</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Aarzoo Garg</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_--
+
+--_004_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_
+Content-Type: image/png; name="Outlook-ClarityPay.png"
+Content-Description: Outlook-ClarityPay.png
+Content-Disposition: inline; filename="Outlook-ClarityPay.png"; size=9708;
+	creation-date="Wed, 26 Aug 2026 10:01:11 GMT";
+	modification-date="Wed, 26 Aug 2026 10:01:13 GMT"
+Content-ID: <b1452969-94cc-4c0b-b91b-a92858159cce>
+Content-Transfer-Encoding: base64
+
+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
+YII=
+
+--_004_MAUPR01MB13618F1081A21EE17EA11E031FEAE2MAUPR01MB13618IN_--
