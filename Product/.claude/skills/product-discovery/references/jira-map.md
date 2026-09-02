@@ -121,7 +121,7 @@ being closed in practice.
 
 | Project | In-flight statuses |
 | --- | --- |
-| `PMT` | `PICKED UP` · `Dev Started` · `Dev Completed` · `Testing Started` · `Testing In Review` · `Testing In Sanity` — **not** `Testing Completed`, which is terminal |
+| `PMT` | `PICKED UP` · `Analysis Started` · `Tech Handover Done` · `Dev Started` · `Dev Completed` · `Testing Started` · `Testing In Review` · `Testing In Sanity` — **not** `Testing Completed`, which is terminal |
 | `IM` | `Backlog` · `In Progress` |
 | `SH` | `Backlog` · `Retest` · `Retest Failed` |
 | `OT` | `unknown — needs input from Sparsh` |
@@ -196,7 +196,7 @@ Ignore: `TP1`, `TPS`, `REL` (Sparsh's personal tracker), `AB`, `DT`.
   spelling), `Tech Handover` (without "Done").
 - `Tech Handover Done` sits in statusCategory *In Progress*, not Done. It means
   handover to engineering is finished, i.e. work is starting — not shipped.
-  It is **not** in the in-flight allowlist above; see the open question.
+  It **is** in flight, as is `Analysis Started` (Sparsh, 2026-09-02).
 - **`Invalid Bug` and `Rejected` (`SH`) are category *In Progress*** despite
   being closed in practice. They are the reason in-flight must be an
   allowlist rather than `status != Done`.
@@ -211,10 +211,9 @@ Ignore: `TP1`, `TPS`, `REL` (Sparsh's personal tracker), `AB`, `DT`.
 
 ## Open questions
 
-- `UNKNOWN: whether "Tech Handover Done" and "Analysis Started" count as in
-  flight — requires input from Sparsh.` Neither appears in the in-flight
-  definition given on 2026-09-02 ("picked up, dev stages, testing stages"),
-  so both are currently excluded from in-flight and from delivered, which
-  leaves them in no bucket.
 - `UNKNOWN: OT line-identity field and in-flight statuses — requires input
   from Sparsh.`
+
+Every other `PMT` status now has a bucket. Any `PMT` remainder in a
+reconciliation is therefore a genuinely new status, not a known gap — name it
+and add it here.
