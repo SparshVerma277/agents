@@ -7,7 +7,7 @@ Implementation: [`Product/.claude/skills/open-issues/SKILL.md`](../../../../.cla
 The `SKILL.md` beside this file is a **read-only mirror**, kept so the agent folder is self-contained on GitHub. Edit the canonical file, never this one, then re-sync:
 
 ```sh
-cp .claude/skills/open-issues/SKILL.md "projects/building agents/agents/open issues agent/SKILL.md"
+cp .claude/skills/open-issues/SKILL.md "projects/building agents/open issues agent/SKILL.md"
 ```
 
 Check they still match with `diff` on those two paths — a difference means someone edited the mirror, and the mirror always loses.

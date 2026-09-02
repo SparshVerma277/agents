@@ -223,7 +223,7 @@ Rules for the split:
 
 - `references/mail-template.html` — the fixed design, ported from the ClarityPay release-notes mail. Placeholder markers and the per-group colour table are documented in its header comment. **Change content only, never the design.**
 - `references/logo-fnbo.png` — FNBO wordmark. `references/logo-slice.png` — slice by fnbo. Both go in the header, side by side, heights matched at 34px, inlined as base64.
-- Source of the design: `projects/building agents/agents/open issues agent/ClarityPay Release Notes _ 26 Aug 2026.eml`. A second reference mail, `Incident Management - 19 Open Tickets.eml`, is where the stat-tile idea comes from. Its age-based tiles (median age, oldest ticket) are **not** reproducible — the checklist holds no first-seen dates.
+- Source of the design: `projects/building agents/open issues agent/ClarityPay Release Notes _ 26 Aug 2026.eml`. A second reference mail, `Incident Management - 19 Open Tickets.eml`, is where the stat-tile idea comes from. Its age-based tiles (median age, oldest ticket) are **not** reproducible — the checklist holds no first-seen dates.
 
 ### Audience
 
