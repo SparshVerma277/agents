@@ -17,8 +17,7 @@ description: Run product discovery for a Skeps product line or capability — fa
 
 ## Step 0 — Scope before you spawn
 
-Ask for the topic if it isn't already clear — a product line (`AF`, `PF`, `UCL`,
-`FNBO`, `CP`, `TIC`, `TGUC`, `HomePro`, `NF`, `FCC`) or a capability
+Ask for the topic if it isn't already clear — a product line (`Lender1`, `Lender2`, `Lender3`, `etc.`) or a capability
 (funding flow, work orders, offer presentation, merchant onboarding…).
 
 Do not run discovery across all lines at once. It produces a matrix nobody
@@ -78,7 +77,7 @@ pillars support each one.
 
 1. **<Recommendation>**
    - **Why:** <gap or parity finding> [^citation]
-   - **Pillars:** <n>/3 — <which> · **Lines:** `<AF / PF / Platform>`
+   - **Pillars:** <n>/3 — <which> · **Lines:** `<PL1 / PL2 / PL3>`
    - **Impact:** <what it moves> · **Existing work:** `<epic keys or "none">`
 
 > Sources: Jira (N issues) · PRDs (N files) · Competitors (N pages, tiers <n>)
@@ -101,8 +100,7 @@ writes, comments, or transitions — this skill is read-only against Atlassian.
 - Missing data prints `UNKNOWN: <topic> — requires input from <owner>`. Never
   a plausible guess.
 - Inferences go under `### Unverified assumptions`, not in the matrix.
-- **AF = AmeriFirst. UCL = FNBO. CP = ClarityPay.** Skeps is point-of-sale
-  financing, largely home improvement — not auto finance, not unsecured
+- Skeps is point-of-sale financing, largely home improvement — not auto finance, not unsecured
   personal lending. Never expand a code beyond `PRODUCT_CONTEXT.md`.
 - Almost everything is lender-configurable. For each recommendation, state
   whether it needs per-lender configuration, and if not, why not.

@@ -84,18 +84,3 @@ Each skill's `SKILL.md` is **mirrored** into `Product/projects/building agents/<
 
 `Product/projects/building agents/best practices for building agents.md` is the standing rubric for agent specs here: trigger → inputs → actions → output → done-condition contracts; named sources for every factual claim; `unknown — needs input from <owner>` over a guess; deterministic retrieval in workflows, judgment in agents. Apply it when writing or reviewing any agent or skill in this repo.
 
-## Nested CLAUDE.md files
-
-Three subdirectories add their own instructions, which apply on top of this file:
-
-- `Product/CLAUDE.md` — response style for analysis work: bullets not prose, brevity in packaging but not in substance, challenge premises before implementation, flag open questions as open rather than resolving them by assertion.
-- `Product/confluence prds/CLAUDE.md` and `conlfuence automation/confluence prds/CLAUDE.md` — the research system rules above.
-- `confluence/confluence prds/CLAUDE.md` — an AmeriFirst platform reference (entities, channels, credit-decision flow, offer structure). Useful domain background; its file inventory describes the stale 276-file copy.
-
-## Domain shorthand
-
-**AF** AmeriFirst · **FNBO** First National Bank of Omaha (acquirer, also referred to via **UCL**) · **Lyon** largest aggregator channel · **PD** Partner Direct · **Conduent** loan-servicing integration · **Pagaya** lender integration · **TGUC / TIC / FCC / CP / HomePro** other lenders · **MDR** merchant discount rate · **OT-/PMT-/IN-/IM-** Jira ticket prefixes. Offers are FICO-banded with min/max amount, term in 12-month increments, base APR, MDR, and DTI thresholds; configuration layers at merchant, store, and application level.
-
-## Filename quirks to type carefully
-
-`conlfuence automation/` and `Product/related artifcats/` are misspelled on disk. Many paths contain spaces, and PRD titles contain double spaces (`AF  Email`) — quote every path.

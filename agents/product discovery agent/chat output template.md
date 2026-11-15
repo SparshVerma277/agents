@@ -2,7 +2,7 @@
 
 1. **[Feature Recommendation Title]**
    - **Rationale & Parity:** [Why needed based on competitor benchmark or internal gap] [^citation]
-   - **Target Product Lines:** `[AF / PF / UCL / Platform]`
+   - **Target Product Lines:** `[PL1 / PL2 / PL3 / PL4]`
    - **Impact & Feasibility:** [Funding/conversion impact vs estimated complexity]
 
 2. **[Feature Recommendation Title]**

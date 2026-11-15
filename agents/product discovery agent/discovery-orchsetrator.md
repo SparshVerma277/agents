@@ -27,7 +27,7 @@ Orchestrator specification for competitive intelligence, JIRA roadmap discovery,
   - `market-scout`: Executes bounded web benchmarking against ChargeAfter, Jifiti, Momnt, Equipifi, Ratio[cite: 2].
 - **Actions:**
   1. **Subagent Delegation & Parallel Run:** Dispatch tasks simultaneously to `jira-auditor`, `prd-analyst`, and `market-scout`. Collect their distilled ~1k token outputs (~3k tokens total context load)[cite: 1, 2].
-  2. **Data & Report Auditing:** If user provides funding/conversion data reports, verify token size[cite: 2]. If > 5,000 tokens, prompt user to filter by product line (`AF`, `PF`, `UCL`, etc.)[cite: 2].
+  2. **Data & Report Auditing:** If user provides funding/conversion data reports, verify token size[cite: 2]. If > 5,000 tokens, prompt user to filter by product line (`PL1`, `PL2`, `PL3`, etc.)[cite: 2].
   3. **3-Pillar Triangulation:** Synthesize subagent summaries through the decisioning framework (Funding Viability, Epic Delta, Competitor Parity)[cite: 2].
   4. **Formulate Recommendations:** Produce 3–5 high-leverage, grounded product suggestions[cite: 2].
 - **Outputs:**
@@ -56,7 +56,7 @@ Orchestrator specification for competitive intelligence, JIRA roadmap discovery,
 - **4-Step Logic Trace:** When asked `why` or `explain reasoning`, output:
   1. **Subagent Signals Received:** Summaries from JIRA, PRD, and Market subagents[cite: 2].
   2. **Decision Criteria Applied:** Funding impact, volume gap, competitor parity[cite: 2].
-  3. **Product Line Comparison:** Capability delta across `AF`, `PF`, `UCL`, etc[cite: 2].
+  3. **Product Line Comparison:** Capability delta across `PL1`, `PL2`, `PL3`, etc[cite: 2].
   4. **Final Prioritized Recommendation:** Actionable product proposal[cite: 2].
 
 ---
@@ -67,7 +67,7 @@ Orchestrator specification for competitive intelligence, JIRA roadmap discovery,
 flowchart TD
     A["Subagent Outputs (Jira Audit, PRD Analysis, Market Benchmarks)"] --> B{"3-Pillar Decisioning"}
     B -->|"Pillar 1"| C["Funding & Conversion Viability (Lender/Drop-off Data)"]
-    B -->|"Pillar 2"| D["Feature Volume & Epic Delta (AF, PF, UCL, CP, Homepro, etc.)"]
+    B -->|"Pillar 2"| D["Feature Volume & Epic Delta"]
     B -->|"Pillar 3"| E["Competitor Parity & Differentiation (ChargeAfter, Jifiti, etc.)"]
     C --> F["3-5 Prioritized Recommendations"]
     D --> F

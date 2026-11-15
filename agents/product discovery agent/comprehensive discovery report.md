@@ -13,7 +13,7 @@
 | `market-scout` | Web Intelligence | 5 Target Competitors | Verified | [Notes] |
 
 ## 3. Product Line & Competitor Capability Matrix
-| Capability Domain | Internal Status (`AF`, `PF`, `UCL`, etc.) | Competitor Benchmark | Strategic Gap / Proposed Action |
+| Capability Domain | Internal Status (`PL1`, `PL2`, `PL3`, etc.) | Competitor Benchmark | Strategic Gap / Proposed Action |
 | :--- | :--- | :--- | :--- |
 | [Underwriting Waterfall] | [Internal state] [^doc] | [Competitor state] [^url] | [Proposed action] |
 
